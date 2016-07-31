@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../lib/react.js"></script>
+    <script src="../lib/react-dom.js"></script>
+    <script src="../lib/browser.min.js"></script>
+</head>
+<body>
+<div id="test">
+
+</div>
+<div id="test1">
+
+</div>
+<script type="text/babel">
+    var names = ['d', 'dc', 'ax'];
+    ReactDOM.render(
+    <div>
+    {
+        names.map(function (name){
+        return <div>Hello,{name}!</div>
+        })
+    }
+    </div >,
+    document.getElementById("test")
+    );
+
+
+
+
+</script>
+<script type="text/babel">
+    var names = [<h1>sss</h1>,<h2>3232</h2>];
+    ReactDOM.render(
+    <div>
+    {names}
+    </div >,
+            document.getElementById("test1")
+    );
+
+
+
+
+</script>
+</body>
+</html>
